@@ -23,6 +23,6 @@
     /* URLS */
     "baseUrl": "./src"
   },
-  "include": ["src"],
+  "include": ["src", "config", "jest.config.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
