@@ -13,6 +13,13 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'react', 'prettier', 'react-hooks', 'import-helpers'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
   rules: {
     'prettier/prettier': ['error'],
     'no-use-before-define': 0,
@@ -54,9 +61,10 @@ module.exports = {
       'error',
       'ignorePackages',
       {
+        js: 'never',
+        jsx: 'never',
         ts: 'never',
         tsx: 'never',
-        js: 'never',
       },
     ],
     'no-restricted-syntax': 0,

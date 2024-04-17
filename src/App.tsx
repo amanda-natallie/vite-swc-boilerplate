@@ -1,13 +1,14 @@
 import { useState } from 'react';
 
-import viteLogo from '../../../../../../../vite.svg';
 import reactLogo from './assets/react.svg';
+import viteLogo from './assets/vite.svg';
 
 import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
 
+  const handleClick = () => setCount(prevCount => prevCount + 1);
   return (
     <>
       <div>
@@ -20,7 +21,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button type="button" onClick={() => setCount(prevCount => prevCount + 1)}>
+        <button type="button" onClick={handleClick}>
           count is {count}
         </button>
         <p>

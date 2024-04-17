@@ -5,4 +5,5 @@ README.md
 reports/
 results/
 dist/
+build/
 pnpm-lock.yaml
