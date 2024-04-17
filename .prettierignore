@@ -2,7 +2,7 @@ ci/
 component-test/
 README.md
 .history
-reports/
+coverage-report/
 results/
 dist/
 pnpm-lock.yaml

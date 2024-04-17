@@ -24,7 +24,7 @@ module.exports = {
   watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
   resetMocks: true,
 
-  coverageDirectory: 'reports',
+  coverageDirectory: 'coverage-report',
   coverageReporters: ['cobertura', 'html', 'lcov', 'text-summary', 'text'],
   collectCoverageFrom: [
     'src/**/*.{js,jsx,ts,tsx}',
