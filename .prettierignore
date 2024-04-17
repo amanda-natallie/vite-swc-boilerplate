@@ -1,0 +1,8 @@
+ci/
+component-test/
+README.md
+.history
+reports/
+results/
+dist/
+pnpm-lock.yaml
