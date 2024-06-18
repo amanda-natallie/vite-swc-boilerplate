@@ -13,8 +13,8 @@
     "test": "chmod +x ./run-tests.sh && ./run-tests.sh",
     "test:watch": "chmod +x ./run-tests.sh && ./run-tests.sh -w",
     "coverage": "chmod +x ./run-tests.sh && ./run-tests.sh -c",
-    "test:e2e": "playwright test --browser=all",
-    "test:e2e-ui": "playwright test --ui"
+    "test:e2e": "pnpm exec playwright install && playwright test --browser=chromium",
+    "test:e2e-ui": "pnpm exec playwright install && playwright test --ui"
   },
   "dependencies": {
     "react": "^18.2.0",
